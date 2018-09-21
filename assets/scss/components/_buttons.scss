@@ -1,0 +1,68 @@
+.dt-btn {
+  display: inline-flex;
+  box-sizing: border-box;
+  text-align: center;
+  height: rem($btn-height);
+  border-radius: $btn-radius;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  padding: rem($btn-padding) rem($btn-padding * 2);
+}
+
+.dt-btnContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  >.dt-btn {
+    display: inline-flex;
+    margin: rem($btn-margin);
+    margin-left: 0;
+    margin-top: rem($btn-margin/2);
+    margin-bottom: rem($btn-margin/2);
+
+    &:first-child {
+      margin-top: rem($btn-margin);
+    }
+
+    &:last-child {
+      margin-bottom: rem($btn-margin);
+    }
+
+    &:first-child,
+    &.--width-full {
+      margin-left: rem($btn-margin);
+    }
+
+    &.--width-full {
+      +.dt-btn {
+        margin-left: rem($btn-margin);
+      }
+    }
+  }
+  &.--oneBlock{
+    flex-direction: column;
+    > .dt-btn {
+      margin-left: rem($btn-margin);
+      margin-right: rem($btn-margin);
+      &.--width-full {
+        width: calc(100% - #{rem($btn-margin * 2)});
+      }
+    }
+  }
+  &.--oneBlock-width-full{
+    @extend .--oneBlock;
+    > .dt-btn {
+      width: calc(100% - #{rem($btn-margin * 2)});
+    }
+  }
+  &.--oneBlock-width-2{
+    @extend .--oneBlock-width-full;
+    width: 50%;
+  }
+  &.--oneBlock-width-3{
+    @extend .--oneBlock-width-full;
+    width: calc(100% / 3);
+  }
+}

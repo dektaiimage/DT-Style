@@ -1,0 +1,30 @@
+$font-path:'../fonts/iconFont/dtIconFont-linear/fonts'!default;
+$fontIconName:'dtIconFont-linear';
+@font-face {
+  font-family: 'dtIconFont-linear';
+  src: url('#{$font-path}/dtIconFont-linear.eot?wcffy9');
+  src: url('#{$font-path}/dtIconFont-linear.eot?wcffy9#iefix') format('embedded-opentype'),
+  url('#{$font-path}/dtIconFont-linear.ttf?wcffy9') format('truetype'),
+  url('#{$font-path}/dtIconFont-linear.woff?wcffy9') format('woff'),
+  url('#{$font-path}/dtIconFont-linear.svg?wcffy9#dtIconFont-linear') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.#{$fontIconName},
+i[class^="ico-"],
+i[class*="ico-"],
+[class^="ico-"]::before,
+[class*="ico-"]::before,
+[class^="icoAf-"]::after,
+[class*="icoAf-"]::after {
+  font-family: $fontIconName !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

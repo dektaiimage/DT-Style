@@ -1,0 +1,9 @@
+// Calculator Unit
+// Ref. : https://goo.gl/wNl18C
+// -------------------------------
+@function stripUnit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}

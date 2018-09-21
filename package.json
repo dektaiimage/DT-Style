@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Open Source Technology UI Developer",
   "main": "package.json",
-  "repository": { 
+  "repository": {
     "type": "git",
     "url": "https://github.com/dektaiimage/DT-Style"
   },
