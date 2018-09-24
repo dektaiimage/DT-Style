@@ -12,7 +12,8 @@
     "DT-Style"
   ],
   "dependencies": {
-    "cirrus-ui": "^0.5.4"
+    "cirrus-ui": "^0.5.4",
+    "vuepress": "^0.14.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -27,7 +28,9 @@
     "gulp-wait": "^0.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "author": "DektaiImage",
   "license": ""
